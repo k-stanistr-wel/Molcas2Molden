@@ -12,15 +12,15 @@ Simply download all the files and unzip to an appropriate location.
 The program can convert either single or multiple files during a run.
 
 For single file runs, ensure you have both the INPORB and HDF5 file from your molcas calculation in a directory. Then run the m2m.py script:
-'''
+```
 python3 m2m.py
-'''
+```
 The program will detect the files and run the conversion.
 
 For multiple file runs, ensure you have all the INPORB files and the single HDF5 file from your molcas calculation in a directory. Then run the m2m.py script:
-'''
+```
 python3 m2m.py
-'''
+```
 The program will detect all the files and run the conversion for each one at a time. Once a SOOrb.x file is converted to MOLDEN format, 'STATE_X.molden', it is stored in a new directory called MOLDENS.
 
 # Acknowledgments:
