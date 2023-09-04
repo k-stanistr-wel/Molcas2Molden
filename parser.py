@@ -155,6 +155,12 @@ def no_args():
             classes.calc_log().message(screen=True, msg='</> Detected RasOrb File Type: ' + str(file))
             store_inputs.INPORB_NAME = str(file)
             INPORB_SET.append(str(file))
+        #04/09/2023 added support for Localised Orbital files
+        if '.LocOrb' in file:
+            INPORB_COUNT += 1
+            classes.calc_log().message(screen=True, msg='</> Detected LocOrb File Type: ' + str(file))
+            store_inputs.INPORB_NAME = str(file)
+            INPORB_SET.append(str(file))
         if '.ScfOrb' in file:
             INPORB_COUNT += 1
             classes.calc_log().message(screen=True, msg='</> Detected ScfOrb File Type: ' + str(file))
@@ -233,6 +239,13 @@ def obtain_user_inputs():
         if '.RasOrb' in argument:
             file_name = arg_array[i]
             classes.calc_log().message(screen=True, msg='</> Detected RasOrb File Type: ' + str(file_name))
+            store_inputs.INPORB_NAME = str(file_name)
+            INPORB_SET.append(str(file_name))
+            store_inputs.INPORB_SET = INPORB_SET
+        #04/09/2023 added support for Localised Orbital files
+        if '.LocOrb' in argument:
+            file_name = arg_array[i]
+            classes.calc_log().message(screen=True, msg='</> Detected LocOrb File Type: ' + str(file_name))
             store_inputs.INPORB_NAME = str(file_name)
             INPORB_SET.append(str(file_name))
             store_inputs.INPORB_SET = INPORB_SET

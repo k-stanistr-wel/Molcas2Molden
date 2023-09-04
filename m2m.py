@@ -27,11 +27,11 @@
 # IMPORTS
 #========
 # General imports:
+#04/09/2023 removed numba import (not needed).
 import os
 import sys
 from itertools import islice
 import numpy as np
-from numba import float64
 import h5py
 from scipy import linalg as la
 # m2m specific imports
