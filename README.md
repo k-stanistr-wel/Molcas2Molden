@@ -6,10 +6,13 @@ This code was written to convert SOOrb files generated in RASSI calculations to 
 
 # Installation:
 
-Simply download all the files and unzip to an appropriate location.
+Package can be installed by simply downloading files as a ZIP and then extracting contents to a desired location. Alternatively, package can be cloned in the usual way into your current DIR in the terminal:
+```
+git clone https://github.com/k-stanistr-wel/Molcas2Molden.git
+```
 
 # Quick start:
-The program can convert either single or multiple files during a run.
+Molcas2Molden can convert either single or multiple files during a run.
 
 For single file runs, ensure you have both the INPORB and HDF5 file from your molcas calculation in a directory. Then run the m2m.py script:
 ```
@@ -17,7 +20,7 @@ python3 m2m.py
 ```
 The program will detect the files and run the conversion.
 
-For multiple file runs, ensure you have all the INPORB files and the single HDF5 file from your molcas calculation in a directory. Then run the m2m.py script:
+For multiple file runs, ensure you have all the INPORB files and the single HDF5 file from your molcas calculation in a directory. Then run the m2m.py script as normal:
 ```
 python3 m2m.py
 ```
