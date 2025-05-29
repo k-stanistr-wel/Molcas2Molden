@@ -1232,7 +1232,7 @@ class ToolBox:
             for coeff in coeffs:
                 MO_LIST.append(coeff)
         MO_ARRAY = np.asarray(MO_LIST)
-        MO_ARRAY = MO_ARRAY.astype(np.float)
+        MO_ARRAY = MO_ARRAY.astype(np.float64)
         h5_class_mo_vectors = MO_ARRAY
         n_bas = InpOrbClass_nbas
         MO_ARRAY = self.reshape_square(MO_ARRAY, n_bas)
