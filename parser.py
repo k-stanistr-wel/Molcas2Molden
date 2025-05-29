@@ -166,6 +166,11 @@ def no_args():
             classes.calc_log().message(screen=True, msg='</> Detected ScfOrb File Type: ' + str(file))
             store_inputs.INPORB_NAME = str(file)
             INPORB_SET.append(str(file))
+        if '.GssOrb' in file:
+            INPORB_COUNT += 1
+            classes.calc_log().message(screen=True, msg='</> Detected GssOrb File Type: ' + str(file))
+            store_inputs.INPORB_NAME = str(file)
+            INPORB_SET.append(str(file))
         if '.SOOrb' in file:
             INPORB_COUNT += 1
             classes.calc_log().message(screen=True, msg='</> Detected SOOrb File Type: ' + str(file))
