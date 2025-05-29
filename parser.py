@@ -261,6 +261,12 @@ def obtain_user_inputs():
             store_inputs.INPORB_NAME = str(file_name)
             INPORB_SET.append(str(file_name))
             store_inputs.INPORB_SET = INPORB_SET
+        if '.GssOrb' in argument:
+            file_name = arg_array[i]
+            classes.calc_log().message(screen=True, msg='</> Detected GssOrb File Type: ' + str(file_name))
+            store_inputs.INPORB_NAME = str(file_name)
+            INPORB_SET.append(str(file_name))
+            store_inputs.INPORB_SET = INPORB_SET
         if '.h5' in argument:
             file_name = arg_array[i]
             classes.calc_log().message(screen=True, msg='</> Detected HDF5 File: ' + str(file_name))
